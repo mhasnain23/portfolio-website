@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-
+  
   body {
-    @apply font-primary bg-primary text-white leading-loose w-full h-full;
-
+    @apply font-primary bg-primary text-white leading-loose;
+    
     :root {
       --background: 0 0% 100%;
       --foreground: 222.2 84% 4.9%;
@@ -61,8 +61,21 @@
       --chart-4: 280 65% 60%;
       --chart-5: 340 75% 55%;
     }
+    
   }
+  
+/* *{
+  font-family: monospace, sans-serif;
+} */
 
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  
+  .text-outline-hover {
+    -webkit-text-stroke: 2px #00ff99;
+  }
+  
   @layer utilities {
     .text-balance {
       text-wrap: balance;

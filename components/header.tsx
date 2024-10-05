@@ -10,7 +10,7 @@ const Header = () => {
         {/* Link */}
         <Link href={"/"}>
           <h1 className="pl-5 xl:p-0 text-4xl font-semibold">
-            Hasnain<span className="text-[#00ff99]">.</span>
+            Hasnain{" "}<span className="text-[#00ff99]">.</span>
           </h1>
         </Link>
         {/* desktop navbar */}

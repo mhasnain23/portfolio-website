@@ -20,10 +20,10 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[500px] flex justify-center xl:h-[492px] mix-blend-lighten absolute"
         >
           <img
-            src="https://wallpapers.com/images/hd/anime-boy-computer-1920-x-1200-dite0cyeh2xqi3hd.jpg"
+            src="/assets/photo.png"
             alt="my portrait image"
             width={300}
             className="object-contain justify-center items-center flex rounded-full absolute"
