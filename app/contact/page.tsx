@@ -82,6 +82,13 @@ const Contact = () => {
       });
     } else {
       alert("Failed to send message.");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
     }
   };
 
