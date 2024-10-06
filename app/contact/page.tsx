@@ -67,8 +67,8 @@ const Contact = () => {
 
   // this function can handle to send contact form data to gmail and using POST req method
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    setLoading(true);
     e.preventDefault();
+    setLoading(true);
     await ContactForm(formData);
     setLoading(false);
     setFormData({
