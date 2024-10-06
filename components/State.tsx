@@ -8,9 +8,9 @@ interface statsProps {
 
 const stats: statsProps[] = [
   { num: 1, text: "year of experice" },
-  { num: 10, text: "Projects completed" },
+  { num: 5, text: "Projects completed" },
   { num: 8, text: "Technologies mastered" },
-  { num: 500, text: "Code Commits" },
+  { num: 400, text: "Code Commits" },
 ];
 
 const State = () => {
