@@ -18,6 +18,10 @@ import { motion } from "framer-motion";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { ChangeEvent, FormEvent, useState } from "react";
+import ContactForm from "../utils/contactForm";
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const info = [
   {
@@ -53,6 +57,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -60,36 +65,19 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // this function can handle to send contact form data to gmail and using POST req method
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    setLoading(true);
     e.preventDefault();
-
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+    await ContactForm(formData);
+    setLoading(false);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
     });
-
-    if (response.ok) {
-      alert("Message sent successfully!");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    } else {
-      alert("Failed to send message.");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    }
   };
 
   console.log(formData);
@@ -172,9 +160,19 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button size="md" className="max-w-40">
+              <Button
+                size="md"
+                onClick={() => {
+                  loading === true
+                    ? toast.error("Please wait...")
+                    : toast.success("Message sent successfully");
+                }}
+                className="max-w-40 disabled:opacity-65"
+                disabled={loading}
+              >
                 Send message
               </Button>
+              <ToastContainer />
             </form>
           </div>
           {/* info */}
