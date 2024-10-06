@@ -308,10 +308,10 @@ const Resume = () => {
                           key={index}
                           className="flex items-center justify-center xl:justify-start gap-4"
                         >
-                          <span className="text-white/60">
+                          <span className="text-white/60 text-[12px]">
                             {info.fieldName}
                           </span>
-                          <span className="text-xl">{info.fieldValue}</span>
+                          <span className="text-lg">{info.fieldValue}</span>
                         </li>
                       );
                     })}
