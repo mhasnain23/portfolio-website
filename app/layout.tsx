@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import { Analytics } from "@vercel/analytics/react"
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -26,7 +27,10 @@ export default function RootLayout({
       <body className={`${jetbrainsMono.variable} antialiased`}>
         <Header />
         <StairTransition/>
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          <Analytics framework="next.js"/>
+          {children}
+          </PageTransition>
       </body>
     </html>
   );
