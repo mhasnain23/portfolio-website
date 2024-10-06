@@ -27,7 +27,7 @@ const Photo = () => {
             alt="my portrait image"
             width={300}
             height={300}
-            className="object-contain justify-center items-center flex rounded-full absolute"
+            className="object-contain justify-center items-center flex rounded-full absolute top-3"
           />
         </motion.div>
         {/* Circle */}

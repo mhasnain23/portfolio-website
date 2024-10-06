@@ -22,6 +22,7 @@ import ContactForm from "@/utils/contactForm";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 const info = [
   {
@@ -160,18 +161,31 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button
-                size="md"
-                onClick={() => {
-                  loading === true
-                    ? toast.error("Please wait...")
-                    : toast.success("Message sent successfully");
-                }}
-                className="max-w-40 disabled:opacity-65"
-                disabled={loading}
-              >
-                Send message
-              </Button>
+              <div className="flex gap-5">
+                <Button
+                  size="md"
+                  onClick={() => {
+                    loading === true
+                      ? toast.error("Please wait...")
+                      : toast.success("Message sent successfully");
+                  }}
+                  className="max-w-40 disabled:opacity-65"
+                  disabled={loading}
+                >
+                  Send message
+                </Button>
+                {loading ? (
+                  <Image
+                    src="/assets/loading.png"
+                    alt="loading image"
+                    className={`${
+                      loading ? "animate-spin text-white/80" : "hidden"
+                    }`}
+                    width={40}
+                    height={40}
+                  />
+                ) : null}
+              </div>
               <ToastContainer />
             </form>
           </div>
