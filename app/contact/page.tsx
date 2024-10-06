@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { ChangeEvent, FormEvent, useState } from "react";
-import ContactForm from "../utils/contactForm";
+import ContactForm from "@/utils/contactForm";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
