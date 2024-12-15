@@ -23,10 +23,10 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[500px] flex justify-center xl:h-[492px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png"
+            src="/assets/codewithme.png"
             alt="my portrait image"
-            width={300}
-            height={300}
+            width={280}
+            height={200}
             className="object-contain justify-center items-center flex rounded-full absolute top-3"
           />
         </motion.div>
