@@ -7,7 +7,7 @@ const socials = [
     icon: <FaLinkedinIn />,
     path: "https://www.linkedin.com/in/muhammad-hasnain-776h86/",
   },
-  { icon: <FaInstagram />, path: "https://www.instagram.com/igxhasnain/" },
+  { icon: <FaInstagram />, path: "https://www.instagram.com/0xhasnain/" },
   //   { icon: <FaTwitter />, path: "" },
 ];
 

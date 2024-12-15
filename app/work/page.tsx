@@ -24,11 +24,16 @@ const projects = [
     category: "frontend",
     title: "Project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
+      "We are a dynamic, full-service creative agency specializing in a wide range of services to help your business thrive. From Logo Creation and Graphic Designing to innovative 3D Models, we craft visually stunning designs tailored to your brand. Our Digital Marketing strategies, Ecommerce solutions, and expert Web Design & Development ensure your online presence is impactful and engaging. We also offer cutting-edge Video Animation, T-Shirt Designs, and NFT creation for unique digital collectibles. Our Product Design and Product Packaging services help your products stand out, while our Software Development and Mobile Application Development teams create customized solutions to meet your business needs. We are dedicated to bringing your vision to life with creativity and innovation.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React.js" },
+      { name: "Typescript" },
+      { name: "Tailwind CSS" },
+    ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://digital-pencil.vercel.app/",
+    github: "https://github.com/mhasnain23/dgital-pencil-project",
   },
   {
     num: "02",
@@ -36,21 +41,31 @@ const projects = [
     title: "Project 2",
     description:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind css" }],
+    stack: [
+      { name: "Next.js" },
+      { name: "React.js" },
+      { name: "Tailwind css" },
+      { name: "MongoDB" },
+    ],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://jobportalnextapp2024.vercel.app/",
+    github: "https://github.com/mhasnain23/nextjs-job-portal-2024",
   },
   {
     num: "03",
-    category: "fullstack",
+    category: "Frontend",
     title: "Project 3",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
-    stack: [{ name: "MongoDB" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
+    stack: [
+      { name: "React.js" },
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "shadcn/ui" },
+    ],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://uiux-hackathon-2024.vercel.app/",
+    github: "https://github.com/mhasnain23/uiux-hackathon",
   },
 ];
 

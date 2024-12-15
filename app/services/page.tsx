@@ -27,13 +27,13 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
     href: "",
   },
-  {
-    num: "04",
-    title: "Web Animations",
-    desciption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
-    href: "",
-  },
+  // {
+  //   num: "04",
+  //   title: "Web Animations",
+  //   desciption:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
+  //   href: "",
+  // },
 ];
 
 const Services = () => {
@@ -62,11 +62,13 @@ const Services = () => {
                     href={service.href}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-[#00ff99] transition-all duration-500 justify-center items-center flex cursor-pointer hover:-rotate-45"
                   >
-                    <BsArrowDownRight className="text-primary text-3xl"/>
+                    <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500">{service.title}</h2>
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500">
+                  {service.title}
+                </h2>
                 {/* description */}
                 <p className="text-white/60">{service.desciption}</p>
                 <div className="border border-b border-white/20 w-full"></div>
