@@ -59,6 +59,7 @@ const Services = () => {
                     {service.num}
                   </div>
                   <Link
+                    target="_blank"
                     href={service.href}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-[#00ff99] transition-all duration-500 justify-center items-center flex cursor-pointer hover:-rotate-45"
                   >
