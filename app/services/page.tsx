@@ -11,21 +11,21 @@ const services = [
     title: "Web Development",
     desciption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
-    href: "",
+    href: "https://discord.gg/C63FbUtFc8",
   },
   {
     num: "02",
     title: "Project Management",
     desciption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
-    href: "",
+    href: "https://discord.gg/C63FbUtFc8",
   },
   {
     num: "03",
     title: "SEO",
     desciption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam id aspernatur voluptates fuga",
-    href: "",
+    href: "https://discord.gg/C63FbUtFc8",
   },
   // {
   //   num: "04",
