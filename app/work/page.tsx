@@ -67,6 +67,25 @@ const projects = [
     live: "https://uiux-hackathon-2024.vercel.app/",
     github: "https://github.com/mhasnain23/uiux-hackathon",
   },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "Project 4",
+    description:
+      "A modern B2B wholesale marketplace built with Next.js 14. It allows vendors to sell products and buyers to make bulk purchases.",
+    stack: [
+      { name: "Next.js 14" },
+      { name: "React.js 18" },
+      { name: "Tailwind CSS" },
+      { name: "Stripe" },
+      { name: "Authentication/Authorization" },
+      { name: "RBAC System" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/thumb4.png",
+    live: "https://fullstackb2bmarketplace.vercel.app",
+    github: "https://github.com/mhasnain23/recreating-marketplace",
+  },
 ];
 
 const Work = () => {
