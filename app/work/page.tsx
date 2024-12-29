@@ -21,24 +21,8 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Project 1",
-    description:
-      "We are a dynamic, full-service creative agency specializing in a wide range of services to help your business thrive. From Logo Creation and Graphic Designing to innovative 3D Models, we craft visually stunning designs tailored to your brand. Our Digital Marketing strategies, Ecommerce solutions, and expert Web Design & Development ensure your online presence is impactful and engaging. We also offer cutting-edge Video Animation, T-Shirt Designs, and NFT creation for unique digital collectibles. Our Product Design and Product Packaging services help your products stand out, while our Software Development and Mobile Application Development teams create customized solutions to meet your business needs. We are dedicated to bringing your vision to life with creativity and innovation.",
-    stack: [
-      { name: "Next.js" },
-      { name: "React.js" },
-      { name: "Typescript" },
-      { name: "Tailwind CSS" },
-    ],
-    image: "/assets/work/thumb1.png",
-    live: "https://digital-pencil.vercel.app/",
-    github: "https://github.com/mhasnain23/dgital-pencil-project",
-  },
-  {
-    num: "02",
     category: "fullstack",
-    title: "Project 2",
+    title: "Project 1",
     description:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     stack: [
@@ -50,6 +34,22 @@ const projects = [
     image: "/assets/work/thumb2.png",
     live: "https://jobportalnextapp2024.vercel.app/",
     github: "https://github.com/mhasnain23/nextjs-job-portal-2024",
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "Project 2",
+    description:
+      "We are a dynamic, full-service creative agency specializing in a wide range of services to help your business thrive. From Logo Creation and Graphic Designing to innovative 3D Models, we craft visually stunning designs tailored to your brand. Our Digital Marketing strategies, Ecommerce solutions, and expert Web Design & Development ensure your online presence is impactful and engaging. We also offer cutting-edge Video Animation, T-Shirt Designs, and NFT creation for unique digital collectibles. Our Product Design and Product Packaging services help your products stand out, while our Software Development and Mobile Application Development teams create customized solutions to meet your business needs. We are dedicated to bringing your vision to life with creativity and innovation.",
+    stack: [
+      { name: "Next.js" },
+      { name: "React.js" },
+      { name: "Typescript" },
+      { name: "Tailwind CSS" },
+    ],
+    image: "/assets/work/thumb1.png",
+    live: "https://digital-pencil.vercel.app/",
+    github: "https://github.com/mhasnain23/dgital-pencil-project",
   },
   {
     num: "03",
@@ -122,7 +122,7 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((stack, index) => {
                   return (
                     <li className="text-xl text-[#00ff99]" key={index}>
@@ -138,7 +138,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -151,7 +151,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
