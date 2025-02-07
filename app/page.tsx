@@ -18,12 +18,11 @@ const Home = () => {
               <span className="text-[#00ff99]">Muhammad Hasnain</span>
             </h1>
             <p className="max-w-[500px] font-bold px-2 mb-9 text-white">
-              I’m a Full-Stack Web Developer with six month's of experience
+              I’m a Full-Stack Web Developer with 10 month's of experience
               building fast, responsive websites using Next.js, React.js, and
               Tailwind CSS. I love creating clean, user-friendly designs backed
               by strong, efficient code. Whether it’s designing smooth frontends
-              or setting up robust backend APIs, I’m dedicated to bringing your
-              vision to life.
+              or setting up robust backend APIs, hit the DM of discord or instagram for work.
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
