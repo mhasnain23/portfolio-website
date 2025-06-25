@@ -15,14 +15,13 @@ const Home = () => {
             <span className="">Software Developer</span>
             <h1 className="text-[48px] xl:[80px] leading-[1.1] font-semibold mb-6">
               Hello I'm <br />
-              <span className="text-[#00ff99]">Muhammad Hasnain</span>
+              <span className="text-[#00ff99]">Muhammad Qasim</span>
             </h1>
             <p className="max-w-[500px] font-bold px-2 mb-9 text-white">
-              I’m a Full-Stack Web Developer with six month's of experience
-              building fast, responsive websites using Next.js, React.js, and
-              Tailwind CSS. I love creating clean, user-friendly designs backed
-              by strong, efficient code. Whether it’s designing smooth frontends
-              or setting up robust backend APIs, I’m dedicated to bringing your
+              I’m a Graphic Designer and Digital Marketer with 2+/yr
+              experience creating eye-catchingnimations, and graphics, a
+              campaigns. I love creating clean, user-friendly designs backed by
+              strong, efficient code. I’m dedicated to bringing your
               vision to life.
             </p>
             {/* btn and social */}
