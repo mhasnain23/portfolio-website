@@ -24,7 +24,7 @@ const projects = [
     category: "fullstack",
     title: "Project 1",
     description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "A fullstack end-to-end project",
     stack: [
       { name: "Next.js" },
       { name: "React.js" },
